@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>JS Input Validator</title>
+  </head>
+  <body>
+    <h1 class="heading-1 m-b-2">JS Input Validator</h1>
+
+    <form class="input-controller">
+      <div class="input-controller-section m-b-2">
+        <label class="label-element m-b-1" for="username">Username</label>
+        <input
+          type="text"
+          class="d-width-full input-element"
+          id="username"
+          name="username"
+          placeholder="Username"
+        />
+        <p class="input-element-msg input-element-msg-username"></p>
+      </div>
+
+      <div class="input-controller-section m-b-2">
+        <label class="label-element m-b-1" for="email">Email</label>
+        <input
+          type="email"
+          class="d-width-full input-element"
+          id="email"
+          name="email"
+          placeholder="Email@example.com"
+        />
+        <p class="input-element-msg input-element-msg-email"></p>
+      </div>
+
+      <div class="input-controller-section m-b-2">
+        <label class="label-element m-b-1" for="password">Password</label>
+        <input
+          type="password"
+          class="d-width-full input-element"
+          id="password"
+          name="password"
+          placeholder="******"
+        />
+        <p class="input-element-msg input-element-msg-password"></p>
+      </div>
+
+      <div class="m-b-2 d-flex flex-align-y-axis gap-1">
+        <input type="checkbox" id="checkbox" name="checkbox" />
+        <label for="terms-and-policies"
+          >You agree with the term and policy.</label
+        >
+      </div>
+
+      <button class="btn btn-submit d-width-full">Sign Up</button>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
